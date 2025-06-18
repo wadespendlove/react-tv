@@ -1,17 +1,19 @@
 .shows {
   display: flex;
+  gap: 10px;
 }
 
 .show {
   padding: 0 1ch;
 }
 
-.show:not(:last-child) {
+.shows a:not(:last-child) {
   border-right: 1px solid white;
+  padding-right: 10px;
 }
 
-.show:hover,
-.show.selected {
+.shows a:hover,
+.shows a.selected {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -25,4 +27,8 @@
   .show-details {
     grid-template-columns: minmax(30ch, auto) 1fr;
   }
+}
+
+a {
+  color: white;
 }
